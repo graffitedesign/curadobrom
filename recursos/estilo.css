@@ -1,0 +1,431 @@
+/*
+font-family: 'Outfit', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    transition: 0.5s;
+}
+
+/* *********************** */
+/* *********************** */
+
+.anime {
+    opacity:0;
+    transform: translate3d(0,-100px,0);
+    transition: .3s;
+}
+
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/* *********************** */
+/* *********************** */
+
+#topo {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#topo img {
+    max-width: 80%;
+}
+
+/* *********************** */
+/* *********************** */
+
+#inicio {
+    text-align: center;
+    width: 100%;
+    background-image: url("./imagens/bg.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+    font-size: 1.5rem;
+    min-height: 400px;
+}
+
+#inicio p {
+    color: #fff;
+}
+
+#inicio .titulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 4rem;
+    font-weight:800;
+}
+
+#inicio a {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000;
+}
+
+#inicio mark {
+    display: inline-block;
+}
+
+#inicio a img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+#inicio a:hover {
+    background: yellow;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000;
+}
+
+/* *********************** */
+/* *********************** */
+
+#opcoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 5%;
+    max-width: 900px;
+
+}
+
+#opcoes label{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight:800;
+}
+
+#opcoes .opcao {
+    width: 180px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: #f6f6f6;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+#opcoes .opcao img {
+    height: 80px;
+}
+
+#opcoes .botao a {
+    color: #005197;
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight:800;
+    padding: 15px;
+    border:3px solid #005197;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#opcoes .botao a img {
+    margin-right: 10px;
+}
+
+#opcoes .botao a:hover{
+    background: yellow;
+    margin-top: 20px;
+}
+
+/* *********************** */
+/* *********************** */
+
+#calendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10%;
+    background: #f6f6f6;
+}
+
+#calendario .titulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+#calendario .titulo img {
+    height: 50px;
+    padding: 0 15px
+}
+#calendario .titulo p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    text-align: center;
+    font-weight:800;
+    color: #005197;
+}
+
+#calendario .prazos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#calendario .prazos .prazo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border:3px solid #005197;
+    border-bottom: 7px solid #005197;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#calendario .prazos .prazo .tempo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight:800;
+    font-size: 1.2rem;
+}
+
+#calendario .prazos .prazo .tempo .dias {
+    height:30px;
+    font-size: 2rem;
+}
+
+#calendario .prazos .prazo .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-weight:800;
+}
+#calendario .prazos .prazo .info .tema {
+    font-size: 1.5rem;
+    font-weight:800;
+}
+
+/* *********************** */
+/* *********************** */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contato .topo {
+    background: #005197;
+    padding: 5% 10%;
+    text-align: center;
+    color: #fff;
+}
+
+#contato .topo span {
+    display: block;
+}
+
+#contato .topo .titulo {
+    font-size: 3rem;
+    font-weight:800;
+}
+#contato .topo .sub {
+    font-size: 1.5rem;
+}
+
+#contato #form {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+#contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+#contato .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight:800;
+    margin-bottom: 25px;
+    display: block;
+}
+
+#contato label {
+    padding: 5px;
+    margin: 10px;
+    text-align: left;
+    border:1px solid #ccc;
+}
+
+#contato input, #contato textarea {
+    border:none;
+    width: 250px;
+    padding: 5px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+#contato .botao {
+    width: 100%;
+    padding: 15px 0;
+}
+
+#contato label,#contato span {
+    display: block;
+}
+
+#contato .botao .btn {
+    background-color: #005197;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contato .botao .btn:hover {
+    background-color: yellow;
+    color: #005197;
+    font-weight:800;
+}
+
+
+#contato .topo .botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato .topo .botao  a {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #005197;
+    font-weight:800;
+}
+
+#contato .topo .botao  a:hover {
+    background-color: yellow;
+    color: #005197;
+}
+
+#contato .topo .botao  a  img {
+    margin-right: 10px;
+}
+
+/* *********************** */
+/* *********************** */
+
+#quemSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    padding-bottom: 30px;
+}
+
+#quemSomos hr {
+    border-color: #ccc;
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+#quemSomos .titulo {
+    background: #ccc;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+#quemSomos .conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #999;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#quemSomos .conteudo img {
+}
+
+
+
+#quemSomos .conteudo p, #quemSomos .conteudo img {
+    width: 40%;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: justify;
+}
+
+#quemSomos .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quemSomos .left img {
+    width: 50%;
+}
+
+#quemSomos .conteudo a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#quemSomos .conteudo iframe {
+    max-width: 90%;
+}
+
+.mensagem {
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+}
